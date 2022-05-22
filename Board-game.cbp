@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Board-game" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Board-game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Board-game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++17" />
+			<Add option="-fexceptions" />
+			<Add directory="SDL2/include/SDL2" />
+			<Add directory="src" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_image" />
+			<Add directory="SDL2/lib" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Box.h" />
+		<Unit filename="src/Button.cpp" />
+		<Unit filename="src/Button.h" />
+		<Unit filename="src/Chess_Board.cpp" />
+		<Unit filename="src/Chess_Board.h" />
+		<Unit filename="src/Chess_BoardState.cpp" />
+		<Unit filename="src/Chess_BoardState.h" />
+		<Unit filename="src/Chess_Board_caculateMove.cpp" />
+		<Unit filename="src/Chess_Board_query.cpp" />
+		<Unit filename="src/Chess_Board_render.cpp" />
+		<Unit filename="src/Chess_Board_threats.cpp" />
+		<Unit filename="src/Chess_KingThreatenedInfo.h" />
+		<Unit filename="src/Chess_Move.h" />
+		<Unit filename="src/Chess_MoveStack.cpp" />
+		<Unit filename="src/Chess_MoveStack.h" />
+		<Unit filename="src/Chess_Piece.cpp" />
+		<Unit filename="src/Chess_Piece.h" />
+		<Unit filename="src/Chess_PieceLocations.cpp" />
+		<Unit filename="src/Chess_PieceLocations.h" />
+		<Unit filename="src/Chess_StoreMove.cpp" />
+		<Unit filename="src/Chess_StoreMove.h" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/Game.h" />
+		<Unit filename="src/Window.cpp" />
+		<Unit filename="src/Window.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
